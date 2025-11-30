@@ -206,7 +206,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigateToReports }) => {
                     <div className="flex-grow w-full">
                         <SearchBar onSearch={handleSearch} />
                     </div>
-                    <Button onClick={onNavigateToReports} variant="secondary" className="w-full sm:w-auto flex-shrink-0">
+                    <Button onClick={onNavigateToReports} variant="success" className="w-full sm:w-auto flex-shrink-0">
                         <span>Reports</span>
                     </Button>
                     <Button onClick={() => setIsAddCustomerModalOpen(true)} variant="primary" className="w-full sm:w-auto flex-shrink-0">
