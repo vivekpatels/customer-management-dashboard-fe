@@ -136,7 +136,7 @@ const Reports: React.FC<ReportsProps> = ({ onNavigateToDashboard }) => {
         <div className="min-h-screen bg-slate-100 text-slate-800">
             <Toaster />
             <header className="bg-gradient-to-br from-primary to-accent text-white shadow-lg">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-4">
                     <div className="flex items-center justify-between py-8">
                         <div>
                             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Reports Dashboard</h1>
