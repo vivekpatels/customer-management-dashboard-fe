@@ -37,6 +37,12 @@ const CustomerTable: React.FC<CustomerTableProps> = ({ customers, onAction, tota
                                             if (Array.isArray(value)) {
                                                 return `${value.length} record(s)`;
                                             }
+
+                                            // If column is installedOn → format date
+                                            if (col.key === 'installedOn' && value) {
+                                                const formatted = new Date(value).toISOString().split('T')[0];
+                                                return formatted; // YYYY-MM-DD
+                                            }
                                             return value || 'N/A';
                                         })()}
                                     </td>
